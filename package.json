@@ -2,6 +2,7 @@
   "dependencies": {
     "formidable": "^2.0.1",
     "fs": "^0.0.1-security",
+    "log-timestamp": "^0.3.0",
     "xlsx": "^0.18.5"
   }
 }

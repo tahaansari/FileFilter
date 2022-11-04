@@ -15,8 +15,11 @@ for (let i = 0; i < sheets.length; i++) {
   });
 }
 
-// console.log(typeof data);
-
-data.forEach((element) => {
-  console.log(Object.values(element).indexOf("Male") > -1); // 0
-});
+for (const index in data) {
+  if (Object.values(data[index]).indexOf("Male") > -1) {
+    console.log("It's a Male");
+  }
+  if (Object.values(data[index]).indexOf("Female") > -1) {
+    console.log("It's a Female");
+  }
+}
