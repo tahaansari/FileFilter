@@ -2,7 +2,7 @@
 const reader = require("xlsx");
 
 // Reading our test file
-const file = reader.readFile("./one.xlsx");
+const file = reader.readFile("./rawdata/two.xlsx");
 
 let data = [];
 

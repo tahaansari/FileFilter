@@ -9,9 +9,25 @@
     <style></style>
   </head>
   <body>
+    <!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+        <meta charset="utf-8" />
+        <title></title>
+      </head>
+      <body>
+        <form action="/submit-student-data" method="post">
+          First Name: <input name="firstName" type="text" /> <br />
+          Last Name: <input name="lastName" type="text" /> <br />
+          <input type="submit" />
+        </form>
+      </body>
+    </html>
+
     <!-- HTML5 file upload selector-->
-    <input id="fileupload" type="file" name="fileupload" />
-    <button id="upload-button" onclick="uploadFile()">Upload</button>
+    <!-- <input id="fileupload" type="file" name="fileupload" />
+    <button id="upload-button" onclick="uploadFile()">Upload</button> -->
 
     <!-- <div class="vh-100 d-flex justify-content-center align-items-center">
       <div class="col-md-5 p-5 shadow-sm border rounded-5 border-primary bg-white">
@@ -100,7 +116,7 @@
       async function uploadFile() {
         let formData = new FormData();
         formData.append("fileupload", fileupload.files[0]);
-        await fetch("http://localhost:8080/upload", {
+        await fetch("http://localhost:8080/", {
           method: "POST",
           body: formData,
         });
